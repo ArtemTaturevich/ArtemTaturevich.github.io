@@ -30,7 +30,7 @@ body {
 .nav {
     width: 320px;
     height: 1024px;
-    box-shadow: 0 10px 50px 3px #000000;
+    box-shadow: 0 10px 10px 3px #cdcccc;
 }
 
 .header-ul {
