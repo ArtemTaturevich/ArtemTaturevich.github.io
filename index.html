@@ -7,42 +7,47 @@
     <link rel="stylesheet" href="./index.css">
 </head>
 <body>
-    <nav class="nav">
-        <header>
-            <ul class="header-ul">
-                <li class="header-ul__li"><img src="./foto/burgerk.svg" alt=""></li>
-                <li class="header-ul__li"><img src="./foto/Groupl.svg" alt=""></li>
-                <li class="header-ul__li sea"><img src="./foto/searchn.svg" alt=""></li>
+    <header class="header">
+        <nav class="header__nav">
+            <ul class="header__items">
+                <li class="header__item">Мои проекты</li>
+                <li class="header__item">Наши работы</li>
+                <li class="header__item">ЛОГО</li>
+                <li class="header__item">Отзывы</li>
+                <li class="header__item">Помощь</li>
+                <li class="header__item">Профиль</li>
             </ul>
-        </header>
-        <main>
-            <ul class="opc">
-                <li class="opc__li">Ремонт техники</li>
-                <li class="opc__li">Услуги и сервисы</li>
-                <li class="opc__li">Корпоративным клиентам</li>
-                <li class="opc__li">Продавцам техники</li>
-                <li class="opc__li">Партнерам</li>
-                <li class="opc__li">Производителям</li>
-                <li class="opc__li">Наши сервисные центры</li>
-                <li class="opc__li">Контакты</li>
-            </ul>
+        </nav>
+    </header>
+    <main class="main">
+        <div class="new">
+            <div class="new__span"><a><b>Создать проект</b><br>+</a></div>
+        </div>
+        <div class="proects">
+            <div class="proect proect_1">
+                <div class="proect__num">1</div>
+                <div class="proect__info">Запись музыкального альбома MOB Vision</div>
+            </div>
+            <div class="proect proect_1">
+                <div class="proect__num">1</div>
+                <div class="proect__info">Запись музыкального альбома MOB Vision</div>
+            </div>
+            <div class="proect proect_1">
+                <div class="proect__num">1</div>
+                <div class="proect__info">Запись музыкального альбома MOB Vision</div>
+            </div>
 
-            <ul class="inf">
-                <li><img src="./foto/copytel.svg" alt=""></li>
-                <li><img src="./foto/chatchat.svg" alt=""></li>
-                <li><img src="./foto/profilep.svg" alt=""></li>
-            </ul>
-
-            <div class="mail">mail@cps.com</div>
-
-            <h1 class="tel">8 800 890 8900</h1>
-
-            <ul class="lang">
-                <li>RU</li>
-                <li>EN</li>
-                <li>CH</li>
-            </ul>
-        </main>
-    </nav>
+            <section class="modal">
+              <div class="modal__content">
+                <div class="modal__close">X</div>
+                <div class="modal__logo">logo</div>
+                <div class="modal__input-1"><input type="text" placeholder="Название" class="modal__input-1-i"></div>
+                <div class="modal__input-2"><input type="text" placeholder="Описание" class="modal__input-2-i"></div>
+                <div class="modal__btn"><button class="modal__btn-btn">Отправить</button></div>
+              </div>
+            </section>
+            <script src="index.js"></script>
+        </div>
+    </main>
 </body>
 </html>
