@@ -3,51 +3,119 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./index.css">
+    <title>Макет C</title>
+    <!-- swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
     <header class="header">
-        <nav class="header__nav">
-            <ul class="header__items">
-                <li class="header__item">Мои проекты</li>
-                <li class="header__item">Наши работы</li>
-                <li class="header__item">ЛОГО</li>
-                <li class="header__item">Отзывы</li>
-                <li class="header__item">Помощь</li>
-                <li class="header__item">Профиль</li>
-            </ul>
-        </nav>
+        <p class="header__p">Ремонт техники различных брендов</p>
     </header>
-    <main class="main">
-        <div class="new">
-            <div class="new__span"><a><b>Саша соси писю</b><br>+</a></div>
-        </div>
-        <div class="proects">
-            <div class="proect proect_1">
-                <div class="proect__num">1</div>
-                <div class="proect__info">Запись музыкального альбома MOB Vision</div>
-            </div>
-            <div class="proect proect_1">
-                <div class="proect__num">1</div>
-                <div class="proect__info">Запись музыкального альбома MOB Vision</div>
-            </div>
-            <div class="proect proect_1">
-                <div class="proect__num">1</div>
-                <div class="proect__info">Запись музыкального альбома MOB Vision</div>
-            </div>
 
-            <section class="modal">
-              <div class="modal__content">
-                <div class="modal__close">X</div>
-                <div class="modal__logo">logo</div>
-                <div class="modal__input-1"><input type="text" placeholder="Название" class="modal__input-1-i"></div>
-                <div class="modal__input-2"><input type="text" placeholder="Описание" class="modal__input-2-i"></div>
-                <div class="modal__btn"><button class="modal__btn-btn">Отправить</button></div>
-              </div>
-            </section>
-            <script src="index.js"></script>
+    <main class="main">
+        <div class="swiperr">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img class="main__logo" src="./fotos/Bitmaplenovo.svg" alt="Lenovo">
+                        <img class="main__arrow" src="./fotos/godd.svg" alt="arrow-back">
+                    </div>
+                    <div class="swiper-slide">
+                        <img class="main__logo" src="./fotos/Bitmapsamsung.svg" alt="Samsung">
+                        <img class="main__arrow" src="./fotos/godd.svg" alt="arrow-back">
+                    </div>
+                    <div class="swiper-slide">
+                        <img class="main__logo" src="./fotos/Bitmapapple.svg" alt="Apple">
+                        <img class="main__arrow" src="./fotos/godd.svg" alt="arrow-back">
+                    </div>
+                    <div class="swiper-slide">
+                        <img class="main__logo" src="./fotos/Bitmapview.svg" alt="View">
+                        <img class="main__arrow" src="./fotos/godd.svg" alt="arrow-back">
+                    </div>
+                    <div class="swiper-slide">
+                        <img class="main__logo" src="./fotos/Bitmapbosh.svg" alt="Bosh">
+                        <img class="main__arrow" src="./fotos/godd.svg" alt="arrow-back">
+                    </div>
+                    <div class="swiper-slide">
+                        <img class="main__logo" src="./fotos/Bitmaphp.svg" alt="HP">
+                        <img class="main__arrow" src="./fotos/godd.svg" alt="arrow-back">
+                    </div>
+                    <div class="swiper-slide">
+                        <img class="main__logo" src="./fotos/Bitmapacer.svg" alt="Acer">
+                        <img class="main__arrow" src="./fotos/godd.svg" alt="arrow-back">
+                    </div>
+                    <div class="swiper-slide">
+                        <img class="main__logo" src="./fotos/Bitmapsony.svg" alt="Sony">
+                        <img class="main__arrow" src="./fotos/godd.svg" alt="arrow-back">
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
         </div>
+        <div class="f">f</div>
+        <ul class="main__ul">
+            
+        </ul>
+
+        <template id="main__li">
+            <li class="main__li">
+                <img class="main__logo" src="" alt="">
+                <img class="main__arrow" src="./fotos/godd.svg" alt="arrow-back">
+            </li>
+        </template>
+
+        <div class="pocaz"><img class="pocaz__img" src="./fotos/iconicon.svg" alt="icon">Показать все</div>
+        <div class="scrit"><img class="scrit__img" src="./fotos/expandsk.svg" alt="icon">Скрыть</div>
     </main>
+    <script src="index.js"></script>
 </body>
 </html>
+
+
+
+
+<!-- <ul class="main__ul">
+    <li class="main__li">
+        <img class="main__logo" src="./fotos/Bitmaplenovo.svg" alt="Lenovo">
+        <img class="main__arrow" src="./fotos/godd.svg" alt="arrow-back">
+    </li>
+    <li class="main__li">
+        <img class="main__logo" src="./fotos/Bitmapsamsung.svg" alt="Samsung">
+        <img class="main__arrow" src="./fotos/godd.svg" alt="arrow-back">
+    </li>
+    <li class="main__li">
+        <img class="main__logo" src="./fotos/Bitmapapple.svg" alt="Apple">
+        <img class="main__arrow" src="./fotos/godd.svg" alt="arrow-back">
+    </li>
+    <li class="main__li">
+        <img class="main__logo" src="./fotos/Bitmapview.svg" alt="View">
+        <img class="main__arrow" src="./fotos/godd.svg" alt="arrow-back">
+    </li>
+    <li class="main__li">
+        <img class="main__logo" src="./fotos/Bitmapbosh.svg" alt="Bosh">
+        <img class="main__arrow" src="./fotos/godd.svg" alt="arrow-back">
+    </li>
+    <li class="main__li">
+        <img class="main__logo" src="./fotos/Bitmaphp.svg" alt="HP">
+        <img class="main__arrow" src="./fotos/godd.svg" alt="arrow-back">
+    </li>
+    <li class="main__li">
+        <img class="main__logo" src="./fotos/Bitmapapple.svg" alt="Apple">
+        <img class="main__arrow" src="./fotos/godd.svg" alt="arrow-back">
+    </li>
+    <li class="main__li">
+        <img class="main__logo" src="./fotos/Bitmaphp.svg" alt="HP">
+        <img class="main__arrow" src="./fotos/godd.svg" alt="arrow-back">
+    </li>
+    <li class="main__li">
+        <img class="main__logo" src="./fotos/Bitmapacer.svg" alt="Acer">
+        <img class="main__arrow" src="./fotos/godd.svg" alt="arrow-back">
+    </li>
+    <li class="main__li">
+        <img class="main__logo" src="./fotos/Bitmapsony.svg" alt="Sony">
+        <img class="main__arrow" src="./fotos/godd.svg" alt="arrow-back">
+    </li>
+</ul> -->
